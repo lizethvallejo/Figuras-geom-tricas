@@ -37,5 +37,10 @@ namespace Figures
         {
             ObjTrapecio.InitializeData(txtBaseMayor, txtBaseMenor, txtAltura, txtPerimetro, txtArea, picCanvas);
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

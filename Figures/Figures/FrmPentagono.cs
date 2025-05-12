@@ -37,5 +37,10 @@ namespace Figures
         {
             ObjPentagono.InitializeData(txtRadio, txtPerimetro, txtArea, picCanvas);
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

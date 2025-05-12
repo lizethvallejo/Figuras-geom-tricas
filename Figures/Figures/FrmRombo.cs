@@ -43,5 +43,10 @@ namespace Figures
         {
             ObjRombo.CloseForm(this);
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

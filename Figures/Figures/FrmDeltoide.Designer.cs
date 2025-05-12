@@ -46,6 +46,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtLado1 = new System.Windows.Forms.TextBox();
             this.lblRadio = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCanvas)).BeginInit();
             this.gBoxSalidas.SuspendLayout();
@@ -56,9 +57,9 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.picCanvas);
-            this.groupBox1.Location = new System.Drawing.Point(317, 42);
+            this.groupBox1.Location = new System.Drawing.Point(299, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(453, 365);
+            this.groupBox1.Size = new System.Drawing.Size(479, 415);
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Grafico:";
@@ -67,7 +68,7 @@
             // 
             this.picCanvas.Location = new System.Drawing.Point(7, 22);
             this.picCanvas.Name = "picCanvas";
-            this.picCanvas.Size = new System.Drawing.Size(440, 337);
+            this.picCanvas.Size = new System.Drawing.Size(466, 387);
             this.picCanvas.TabIndex = 0;
             this.picCanvas.TabStop = false;
             // 
@@ -77,7 +78,7 @@
             this.gBoxSalidas.Controls.Add(this.label2);
             this.gBoxSalidas.Controls.Add(this.txtPerimetro);
             this.gBoxSalidas.Controls.Add(this.label1);
-            this.gBoxSalidas.Location = new System.Drawing.Point(31, 308);
+            this.gBoxSalidas.Location = new System.Drawing.Point(31, 327);
             this.gBoxSalidas.Name = "gBoxSalidas";
             this.gBoxSalidas.Size = new System.Drawing.Size(252, 100);
             this.gBoxSalidas.TabIndex = 24;
@@ -120,7 +121,7 @@
             // 
             this.GboxProceso.Controls.Add(this.btnResetear);
             this.GboxProceso.Controls.Add(this.btnCalcular);
-            this.GboxProceso.Location = new System.Drawing.Point(31, 197);
+            this.GboxProceso.Location = new System.Drawing.Point(31, 217);
             this.GboxProceso.Name = "GboxProceso";
             this.GboxProceso.Size = new System.Drawing.Size(252, 91);
             this.GboxProceso.TabIndex = 23;
@@ -156,7 +157,7 @@
             this.GBoxEntradas.Controls.Add(this.label3);
             this.GBoxEntradas.Controls.Add(this.txtLado1);
             this.GBoxEntradas.Controls.Add(this.lblRadio);
-            this.GBoxEntradas.Location = new System.Drawing.Point(31, 42);
+            this.GBoxEntradas.Location = new System.Drawing.Point(31, 81);
             this.GBoxEntradas.Name = "GBoxEntradas";
             this.GBoxEntradas.Size = new System.Drawing.Size(252, 130);
             this.GBoxEntradas.TabIndex = 22;
@@ -223,11 +224,23 @@
             this.lblRadio.TabIndex = 0;
             this.lblRadio.Text = "Lado 1:";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(84, 34);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(113, 32);
+            this.label5.TabIndex = 26;
+            this.label5.Text = "Deltoide";
+            // 
             // FrmDeltoide
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gBoxSalidas);
             this.Controls.Add(this.GboxProceso);
@@ -243,6 +256,7 @@
             this.GBoxEntradas.ResumeLayout(false);
             this.GBoxEntradas.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -266,5 +280,6 @@
         private System.Windows.Forms.TextBox txtLado1;
         private System.Windows.Forms.Label lblRadio;
         private System.Windows.Forms.Label lblAnguloMessage;
+        private System.Windows.Forms.Label label5;
     }
 }

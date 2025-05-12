@@ -38,5 +38,10 @@ namespace Figures
         {
             ObjRomboide.InitializeData(txtBase, txtAltura, txtPerimetro, txtArea, picCanvas);
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

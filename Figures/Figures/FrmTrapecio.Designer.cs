@@ -39,16 +39,17 @@
             this.btnResetear = new System.Windows.Forms.Button();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.GBoxEntradas = new System.Windows.Forms.GroupBox();
+            this.txtLadoDerecho = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtLadoIzquierdo = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.txtAltura = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtBaseMenor = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtBaseMayor = new System.Windows.Forms.TextBox();
             this.lblRadio = new System.Windows.Forms.Label();
-            this.txtLadoDerecho = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtLadoIzquierdo = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCanvas)).BeginInit();
             this.gBoxSalidas.SuspendLayout();
@@ -59,9 +60,9 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.picCanvas);
-            this.groupBox1.Location = new System.Drawing.Point(317, 42);
+            this.groupBox1.Location = new System.Drawing.Point(270, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(453, 365);
+            this.groupBox1.Size = new System.Drawing.Size(518, 426);
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Grafico:";
@@ -70,7 +71,7 @@
             // 
             this.picCanvas.Location = new System.Drawing.Point(7, 22);
             this.picCanvas.Name = "picCanvas";
-            this.picCanvas.Size = new System.Drawing.Size(440, 337);
+            this.picCanvas.Size = new System.Drawing.Size(505, 398);
             this.picCanvas.TabIndex = 0;
             this.picCanvas.TabStop = false;
             // 
@@ -80,7 +81,7 @@
             this.gBoxSalidas.Controls.Add(this.label2);
             this.gBoxSalidas.Controls.Add(this.txtPerimetro);
             this.gBoxSalidas.Controls.Add(this.label1);
-            this.gBoxSalidas.Location = new System.Drawing.Point(31, 308);
+            this.gBoxSalidas.Location = new System.Drawing.Point(12, 338);
             this.gBoxSalidas.Name = "gBoxSalidas";
             this.gBoxSalidas.Size = new System.Drawing.Size(252, 100);
             this.gBoxSalidas.TabIndex = 24;
@@ -123,7 +124,7 @@
             // 
             this.GboxProceso.Controls.Add(this.btnResetear);
             this.GboxProceso.Controls.Add(this.btnCalcular);
-            this.GboxProceso.Location = new System.Drawing.Point(31, 221);
+            this.GboxProceso.Location = new System.Drawing.Point(12, 250);
             this.GboxProceso.Name = "GboxProceso";
             this.GboxProceso.Size = new System.Drawing.Size(252, 65);
             this.GboxProceso.TabIndex = 23;
@@ -162,12 +163,44 @@
             this.GBoxEntradas.Controls.Add(this.label3);
             this.GBoxEntradas.Controls.Add(this.txtBaseMayor);
             this.GBoxEntradas.Controls.Add(this.lblRadio);
-            this.GBoxEntradas.Location = new System.Drawing.Point(31, 42);
+            this.GBoxEntradas.Location = new System.Drawing.Point(12, 85);
             this.GBoxEntradas.Name = "GBoxEntradas";
             this.GBoxEntradas.Size = new System.Drawing.Size(252, 159);
             this.GBoxEntradas.TabIndex = 22;
             this.GBoxEntradas.TabStop = false;
             this.GBoxEntradas.Text = "Entradas";
+            // 
+            // txtLadoDerecho
+            // 
+            this.txtLadoDerecho.Location = new System.Drawing.Point(131, 131);
+            this.txtLadoDerecho.Name = "txtLadoDerecho";
+            this.txtLadoDerecho.Size = new System.Drawing.Size(100, 22);
+            this.txtLadoDerecho.TabIndex = 9;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(18, 134);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(96, 16);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Lado Derecho:";
+            // 
+            // txtLadoIzquierdo
+            // 
+            this.txtLadoIzquierdo.Location = new System.Drawing.Point(131, 103);
+            this.txtLadoIzquierdo.Name = "txtLadoIzquierdo";
+            this.txtLadoIzquierdo.Size = new System.Drawing.Size(100, 22);
+            this.txtLadoIzquierdo.TabIndex = 7;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(18, 106);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(99, 16);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Lado izquierdo:";
             // 
             // txtAltura
             // 
@@ -217,43 +250,23 @@
             this.lblRadio.TabIndex = 0;
             this.lblRadio.Text = "Base Mayor:";
             // 
-            // txtLadoDerecho
+            // label7
             // 
-            this.txtLadoDerecho.Location = new System.Drawing.Point(131, 131);
-            this.txtLadoDerecho.Name = "txtLadoDerecho";
-            this.txtLadoDerecho.Size = new System.Drawing.Size(100, 22);
-            this.txtLadoDerecho.TabIndex = 9;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(18, 134);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(96, 16);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Lado Derecho:";
-            // 
-            // txtLadoIzquierdo
-            // 
-            this.txtLadoIzquierdo.Location = new System.Drawing.Point(131, 103);
-            this.txtLadoIzquierdo.Name = "txtLadoIzquierdo";
-            this.txtLadoIzquierdo.Size = new System.Drawing.Size(100, 22);
-            this.txtLadoIzquierdo.TabIndex = 7;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(18, 106);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(99, 16);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Lado izquierdo:";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(71, 25);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(118, 32);
+            this.label7.TabIndex = 26;
+            this.label7.Text = "Trapecio";
             // 
             // FrmTrapecio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gBoxSalidas);
             this.Controls.Add(this.GboxProceso);
@@ -269,6 +282,7 @@
             this.GBoxEntradas.ResumeLayout(false);
             this.GBoxEntradas.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -295,5 +309,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtLadoIzquierdo;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }
